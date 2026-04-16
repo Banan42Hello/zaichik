@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bunny Run - 8-bit platformer adventure!">
+    <title>Bunny Run</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Pixel-perfect retro font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <!-- Title -->
+            <div class="logo">
+                <h1>BUNNY RUN</h1>
+                <span class="tagline">8-BIT PLATFORMER</span>
+            </div>
+            
+            <!-- Sales counter -->
+            <div class="sales-counter">
+                <span class="sold-label">COPIES SOLD</span>
+                <span id="sales-number" class="sold-number">2,456,789</span>
+            </div>
+            
+            <!-- Steam button -->
+            <a href="https://store.steampowered.com/app/1229490/The_Sims_4/" 
+               target="_blank" 
+               class="steam-button">
+                <span>GET IT ON</span>
+                <span class="steam-logo">STEAM</span>
+            </a>
+            
+            <!-- Mobile menu toggle (for responsiveness) -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                ☰
+            </button>
+        </div>
+        
+        <!-- Navigation (simple links that scroll to sections) -->
+        <nav id="main-nav">
+            <a href="#hero" class="nav-link">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#donate" class="nav-link">DONATE</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h2>WELCOME TO THE RUN!</h2>
+                <p>Guide the heroic bunny through pixel-perfect platforms, collect carrots, and outsmart the evil purple wizard in this retro 8-bit platformer.</p>
+                <div class="cta-buttons">
+                    <a href="https://store.steampowered.com/" target="_blank" class="cta-steam">PLAY ON STEAM</a>
+                    <a href="#about" class="cta-learn">LEARN MORE</a>
+                </div>
+            </div>
+            
+            <!-- Interactive carousel -->
+            <div class="carousel">
+                <button id="prev-btn" class="carousel-btn" aria-label="Previous character">◀</button>
+                
+                <div class="carousel-frame">
+                    <img id="carousel-image" 
+                         src="https://via.placeholder.com/800x450/228B22/000000?text=8-BIT+BUNNY" 
+                         alt="8-bit Bunny" 
+                         class="carousel-img">
+                    <div id="character-name" class="character-label">BUNNY</div>
+                </div>
+                
+                <button id="next-btn" class="carousel-btn" aria-label="Next character">▶</button>
+                
+                <!-- Thumbnail dots -->
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+            
+            <div class="hero-scroll-hint">↓ SCROLL FOR MORE ↓</div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>ABOUT BUNNY RUN</h2>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Bunny Run is a fast-paced 8-bit platformer where you play as a brave bunny hopping through vibrant pixel worlds. 
+                    Dodge traps, collect golden carrots, and battle the mischievous Purple Wizard who keeps stealing your veggies!
+                </p>
+                <p>
+                    <strong>5 DIFFICULTIES • EACH WITH UNIQUE PUZZLES</strong><br>
+                    From “Carrot Rookie” (easy tutorial levels) to “Wizard Nightmare” (insane speed-run puzzles), every difficulty 
+                    features hand-crafted 8-bit challenges that will test your reflexes and brainpower.
+                </p>
+                <ul class="features">
+                    <li>✅ Classic 8-bit pixel art</li>
+                    <li>✅ 20+ handcrafted levels</li>
+                    <li>✅ 5 escalating difficulties</li>
+                    <li>✅ Secret carrot collectibles</li>
+                    <li>✅ Boss fight vs. Purple Wizard</li>
+                </ul>
+            </div>
+            
+            <!-- Simple 8-bit style difficulty icons (CSS only) -->
+            <div class="difficulty-grid">
+                <div class="difficulty-card">
+                    <div class="pixel-badge">1</div>
+                    <div class="difficulty-name">CARROT ROOKIE</div>
+                </div>
+                <div class="difficulty-card">
+                    <div class="pixel-badge">2</div>
+                    <div class="difficulty-name">HOPPER HERO</div>
+                </div>
+                <div class="difficulty-card">
+                    <div class="pixel-badge">3</div>
+                    <div class="difficulty-name">BUNNY BLASTER</div>
+                </div>
+                <div class="difficulty-card">
+                    <div class="pixel-badge">4</div>
+                    <div class="difficulty-name">WIZARD WARRIOR</div>
+                </div>
+                <div class="difficulty-card">
+                    <div class="pixel-badge">5</div>
+                    <div class="difficulty-name">NIGHTMARE RUN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATE SECTION -->
+    <section id="donate" class="donate">
+        <div class="donate-container">
+            <div class="donate-text">
+                <h2>DONATE TO THE CAUSE</h2>
+                <p>
+                    Bunny Run is an indie passion project. Every carrot you donate helps us add more levels, 
+                    fix bugs, and keep the 8-bit dream alive. Thank you for supporting independent game devs!
+                </p>
+                <div class="donate-stats">
+                    <div class="stat">
+                        <span class="stat-label">GOAL</span>
+                        <span class="stat-value">$15,000</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">RAISED</span>
+                        <span class="stat-value">$8,420</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fake donate form (demo only) -->
+            <form id="donate-form" class="donate-form">
+                <label for="amount">CHOOSE YOUR CARROT AMOUNT</label>
+                <div class="amount-buttons">
+                    <button type="button" class="amount-btn" data-value="5">$5</button>
+                    <button type="button" class="amount-btn active" data-value="10">$10</button>
+                    <button type="button" class="amount-btn" data-value="20">$20</button>
+                    <button type="button" class="amount-btn" data-value="50">$50</button>
+                    <button type="button" class="amount-btn" data-value="100">$100</button>
+                </div>
+                
+                <input type="text" id="custom-amount" placeholder="Custom amount" aria-label="Custom donation amount">
+                
+                <button type="submit" class="donate-button">
+                    THROW CARROTS → SUPPORT BUNNY RUN
+                </button>
+                
+                <p class="donate-note">* 100% goes to development • No rabbits were harmed</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2026 BUNNY RUN • ALL RIGHTS RESERVED</p>
+                <p class="made-with">Made with ♥ and 8-bit pixels in Boston, MA</p>
+            </div>
+            
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://x.com" target="_blank" class="social-icon" aria-label="X (Twitter)">𝕏</a>
+                <a href="https://discord.com" target="_blank" class="social-icon" aria-label="Discord">DISCORD</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">📸</a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube">▶️</a>
+                <a href="https://tiktok.com" target="_blank" class="social-icon" aria-label="TikTok">♬</a>
+            </div>
+            
+            <div class="footer-right">
+                <a href="#hero" class="back-to-top">↑ BACK TO TOP ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
